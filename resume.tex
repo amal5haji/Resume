@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+% 'banking' style provides a full-width layout, very modern and tech-focused.
+% It emphasizes the header and maximizes space for bullet points.
+\moderncvstyle{banking} 
+\moderncvcolor{burgundy} % 'burgundy' adds a stylish, professional pop of color vs standard blue
+
+% Character encoding and font adjustments
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75, top=2cm, bottom=2cm]{geometry}
+
+% Personal Data
+% formatting hack: Placing the full name in the second argument ensures 
+% the entire name renders in the bold, dark style (removing the gray first name).
+\name{}{Amal S}
+\title{Software Engineer}
+\address{India}{}{}
+\phone[mobile]{+91~9061700308}
+\email{amalshajikm@gmail.com}
+
+% Social links - Updated as requested
+% moderncv automatically adds the icon and makes the text clickable
+\social[linkedin]{amal-s-6524b1242} 
+\social[github]{amal5haji}       
+
+%----------------------------------------------------------------------------------
+%            CONTENT
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+%--- SUMMARY ---
+\section{Professional Summary}
+\small{Results-oriented Software Engineer with strong expertise in \textbf{Golang}, \textbf{Microservices}, and \textbf{AI Infrastructure}. Specialized in architecting high-performance backend systems using \textbf{gRPC}, \textbf{REST APIs}, and \textbf{Docker}. Proven track record of deploying scalable AI solutions, including \textbf{RAG} pipelines and serving open-source LLMs via \textbf{vLLM/SGLang} for production-grade throughput. Adept at optimizing database performance with \textbf{Redis}, \textbf{PostgreSQL}, and \textbf{MongoDB}. Passionate about bridging the gap between robust backend engineering and cutting-edge AI agent workflows.}
+
+%--- SKILLS ---
+% Using a clean list format for the Banking style to allow quick scanning
+\section{Technical Stack}
+\begin{itemize}
+    \item \textbf{Core Languages:} Golang (Go)
+    \item \textbf{Backend Engineering:} Microservices, gRPC, RESTful APIs, Apache Kafka, Gin Framework, WebSockets
+    \item \textbf{AI \& LLM Ops:} vLLM, SGLang, Hugging Face Models, AI Agents, RAG (Retrieval-Augmented Generation), Vector Databases (Milvus)
+    \item \textbf{Infrastructure \& DevOps:} Docker, Linux, AWS (EC2, S3, SNS, SES), CI/CD Pipelines
+    \item \textbf{Databases:} PostgreSQL, MongoDB, Redis (Caching \& Pub/Sub), SQLc
+    \item \textbf{Tools:} Git, GitHub/GitLab, Postman, Jira
+\end{itemize}
+
+%--- EXPERIENCE ---
+\section{Experience}
+
+\cventry{01/2025--Present}{Software Engineer}{Piovation GMBH}{Germany (Remote)}{}{
+\begin{itemize}
+    \item \textbf{AI Agent Architecture:} Independently architected and deployed an autonomous AI Agent flow using \textbf{Golang}, capable of complex reasoning and task execution.
+    \item \textbf{gRPC Microservices Design:} Architected a responsibility-based microservices ecosystem for the agent application using \textbf{gRPC}, ensuring modular scalability and high-performance inter-service communication.
+    \item \textbf{High-Throughput LLM Serving:} Engineered a production-grade inference server utilizing \textbf{vLLM} and \textbf{SGLang} to host open-source models from \textbf{Hugging Face}, significantly increasing token throughput and reducing latency for concurrent users.
+    \item \textbf{RAG Implementation:} Developed a Retrieval-Augmented Generation service utilizing \textbf{Milvus} for high-dimensional vector storage, ensuring accurate context retrieval for LLM responses.
+    \item \textbf{Scalable Backend Systems:} Implemented asynchronous communication patterns using \textbf{Redis} message queues to decouple services, ensuring fault tolerance under heavy loads.
+    \item \textbf{DevOps \& Security:} Containerized the entire AI stack using \textbf{Docker} for consistent deployment across on-premise data centers, ensuring strict data privacy and security compliance.
+\end{itemize}}
+
+\vspace{4pt} % Add a little breathing room between jobs
+
+\cventry{03/2023--12/2024}{Software Engineer}{Bit Brothers Tech Pvt Ltd}{India (Remote)}{}{
+\begin{itemize}
+    \item \textbf{Microservices Development:} Designed and built a suite of scalable microservices for an AI-powered Job CRM using \textbf{Golang} and the \textbf{Gin} framework.
+    \item \textbf{API Performance:} Migrated legacy endpoints to \textbf{gRPC}, reducing inter-service communication latency by 40\% and defining strict contracts via Protocol Buffers.
+    \item \textbf{Database Optimization:} Managed data persistence layers using \textbf{PostgreSQL} and \textbf{MongoDB}, utilizing \textbf{SQLc} for type-safe database interactions and efficient query execution.
+    \item \textbf{AI Integration:} Integrated OpenAI APIs to power NLP features within the CRM, automating candidate profile parsing and matching.
+    \item \textbf{AWS Cloud Infrastructure:} Leveraged AWS EC2 for hosting, S3 for artifact storage, and configured SNS/SES for a robust reliable notification system.
+    \item \textbf{Caching Strategy:} Implemented \textbf{Redis} caching layers to offload database reads, significantly improving API response times during peak traffic.
+\end{itemize}}
+
+%--- EDUCATION ---
+\section{Education}
+\cventry{Sep 2023--Sep 2025}{Master of Computer Applications (MCA)}{Lovely Professional University}{Punjab, India}{}{}
+\cventry{Aug 2019--Aug 2022}{Bachelor of Computer Applications (BCA)}{Mahatma Gandhi University}{Kerala, India}{}{}
+
+%--- COURSES ---
+\section{Certifications \& Courses}
+\cventry{Feb 2024--Jul 2024}{Programming with Google Go Specialization}{Coursera}{}{}{}
+\cventry{Sep 2022--Feb 2023}{Full Stack Program (6 Months)}{10xAcademy}{}{}{}
+
+\end{document}
